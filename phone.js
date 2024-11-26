@@ -82,7 +82,7 @@ const showPhoneDetails = (phone) => {
     showDetailContainer.innerHTML=`
     <img style='margin: 20px auto;' src="${phone.image}" alt="">
     <p><span>storage: </span> ${phone?.mainFeatures.storage}</p>
-    <p><span>GPS: </span>${phone?.others?.GPS}</p>
+    <p><span>GPS: </span>${phone?.others?.GPS || 'No GPS available'}</p>
     `
     
 
